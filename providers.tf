@@ -1,12 +1,14 @@
 terraform {
   required_providers {
-    PROVIDERNAME = {
-      source = "repository"
-      version = "x.x.x"
+    aws = {
+      source = "hashicorp/aws"
+      version = "3.59.0"
     }
   }
 }
 
-provider "PROVIDERNAME" {
-  param = "value"
+provider "aws" {
+  region = "${var.region}"
+  access_key = "${var.access_key}"
+  secret_key = "${var.secret_key}"
 }
