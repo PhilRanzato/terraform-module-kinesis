@@ -6,13 +6,13 @@ variable "region" {
 
 variable "access_key" {
   type = string
-  default = "xxxxx"
+  default = ""
   description = "AWS Access Key ID"
 }
 
 variable "secret_key" {
   type = string
-  default = "xxxxx"
+  default = ""
   description = "AWS Secret Access Key"
 }
 
